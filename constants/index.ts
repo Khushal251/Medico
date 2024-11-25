@@ -5,27 +5,27 @@ export const navLinks = [
     icon: "/assets/icons/home.svg",
   },
   {
-    label: "Image Restore",
+    label: "Smart Annotation Tools",
     route: "/transformations/add/restore",
     icon: "/assets/icons/image.svg",
   },
   {
-    label: "Generative Fill",
+    label: "Measurement Tools",
     route: "/transformations/add/fill",
     icon: "/assets/icons/stars.svg",
   },
   {
-    label: "Object Remove",
+    label: "Advanced Image Editing",
     route: "/transformations/add/remove",
     icon: "/assets/icons/scan.svg",
   },
   {
-    label: "Object Recolor",
+    label: "DICOM Compatibility",
     route: "/transformations/add/recolor",
     icon: "/assets/icons/filter.svg",
   },
   {
-    label: "Background Remove",
+    label: "Brightness & Contrast",
     route: "/transformations/add/removeBackground",
     icon: "/assets/icons/camera.svg",
   },

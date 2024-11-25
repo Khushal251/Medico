@@ -18,13 +18,21 @@ const MobileNav = () => {
     const pathname = usePathname();
     return (
         <header className='header'>
-            <Link href="/" className='flex items-center gap-2 md:py-2'>
+            {/* <Link href="/" className='flex items-center gap-2 md:py-2'>
                 <Image
                     src="/assets/images/logo-text.svg"
                     alt='logo'
                     width={180}
                     height={28}
                 />
+                Medico
+            </Link> */}
+
+            <Link
+                href="/"
+                className="sidebar-logo text-6xl font-bold text-blue-600 ml-6 hover:text-blue-800"
+            >
+                Medico
             </Link>
 
             <nav className='flex gap-2'>
@@ -42,12 +50,18 @@ const MobileNav = () => {
                         </SheetTrigger>
                         <SheetContent className='sheet-content sm:w-64'>
                             <>
-                                <Image
+                                {/* <Image
                                     src="/assets/images/logo-text.svg"
                                     alt='logo'
                                     width={152}
                                     height={23}
-                                />
+                                /> */}
+                                <Link
+                                    href="/"
+                                    className="sidebar-logo text-6xl font-bold text-blue-600 ml-6 hover:text-blue-800"
+                                >
+                                    Medico
+                                </Link>
 
                                 <ul className='header-nav_elements'>
                                     {navLinks.slice(0, 6).map((link) => {
@@ -61,7 +75,7 @@ const MobileNav = () => {
                                                         alt='logo'
                                                         width={24}
                                                         height={24}
-                                                        
+
                                                     />
                                                     {link.label}
                                                 </Link>
@@ -77,10 +91,10 @@ const MobileNav = () => {
                 </SignedIn>
 
                 <SignedOut>
-            <Button asChild className='button bg-purple-gradient bg-cover'>
-              <Link href="/sign-in">Login</Link>
-            </Button>
-          </SignedOut>
+                    <Button asChild className='button bg-purple-gradient bg-cover'>
+                        <Link href="/sign-in">Login</Link>
+                    </Button>
+                </SignedOut>
             </nav>
         </header>
     )
